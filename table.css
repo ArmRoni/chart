@@ -1,0 +1,29 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+.table_content_title {
+    height: 48px;
+    border: 1px solid #d7d7d7;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    padding: 0 16px;
+    cursor: pointer;
+}
+.table_content_list {
+    background-color: var(--whitecolor);
+    border: 1px solid #d7d7d7;
+    border-top-color: transparent;
+    border-radius: 0 0 6px 6px;
+    padding: 0px 16px 2px 16px;
+    margin-top: -2px;
+}
+.table_content_list ul li {
+	list-style: none;
+}
+.table_content_list ul li a {
+	text-decoration:none;
+	color: #000;
+}

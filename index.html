@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+   <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>graph </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
+   <!-- /Added by HTTrack -->
+   <link rel="stylesheet" href="style.css">
+   <link rel="stylesheet" href="graph.css">
+   <head>
+   </head>
+   <body>
+
+
+         <div class="annual_averages_panel">
+         
+            <div class="temperature-graph-container">
+               <div id="chart_highlow_temperature" typeKey="highlow_temperature" class="chart">
+                  <p class="loader">Loading weather data. Please wait&hellip;</p>
+               </div>
+               <div class="averages_table-wrap">
+                  <table border="0" cellspacing="0" cellpadding="0" class="averages_table">
+                     <tr>
+                        <th class="label">&nbsp;</th>
+                        <th>Jan</th>
+                        <th>Feb</th>
+                        <th>Mar</th>
+                        <th>Apr</th>
+                        <th>May</th>
+                        <th>Jun</th>
+                        <th>Jul</th>
+                        <th>Aug</th>
+                        <th>Sep</th>
+                        <th>Oct</th>
+                        <th>Nov</th>
+                        <th>Dec</th>
+                     </tr>
+                     <tr>
+                        <td class="label">High &deg;C</td>
+                        <td  style="background-color: #FFCC00">15</td>
+                        <td  style="background-color: #FFCC00">16</td>
+                        <td  style="background-color: #FFCC00">18</td>
+                        <td  style="background-color: #FFCC00">21</td>
+                        <td  style="background-color: #FFCC00">23</td>
+                        <td  style="background-color: #FFCC00">27</td>
+                        <td  style="background-color: #FFCC00">29</td>
+                        <td  style="background-color: #FFCC00">29</td>
+                        <td  style="background-color: #FFCC00">26</td>
+                        <td  style="background-color: #FFCC00">22</td>
+                        <td  style="background-color: #FFCC00">18</td>
+                        <td  style="background-color: #FFCC00">16</td>
+                     </tr>
+                     <tr>
+                        <td class="label">Low &deg;C</td>
+                        <td style="background-color: #add7a5">6</td>
+                        <td style="background-color: #add7a5">7</td>
+                        <td style="background-color: #add7a5"> 9</td>
+                        <td style="background-color: #add7a5">11</td>
+                        <td style="background-color: #add7a5">13</td>
+                        <td style="background-color: #add7a5">17</td>
+                        <td style="background-color: #add7a5">19</td>
+                        <td style="background-color: #add7a5">19</td>
+                        <td style="background-color: #add7a5">17</td>
+                        <td style="background-color: #add7a5">14</td>
+                        <td style="background-color: #add7a5">10</td>
+                        <td style="background-color: #add7a5">8</td>
+                     </tr>
+                     <tr>
+                        <td class="label">High &deg;F</td>
+                        <td style="background-color: #FFFF00" background-color: #00FFFF  >59</td>
+                        <td style="background-color: #FFFF00" background-color: #00FFFF  >61</td>
+                        <td style="background-color: #FFFF00" background-color: #00FFFF  >64</td>
+                        <td style="background-color: #FFFF00" background-color: #00FFFF  >70</td>
+                        <td style="background-color: #FFFF00" background-color: #00FFFF  >73</td>
+                        <td style="background-color: #FFFF00" background-color: #00FFFF  >81</td>
+                        <td style="background-color: #FFFF00" background-color: #00FFFF  >84</td>
+                        <td style="background-color: #FFFF00" background-color: #00FFFF  >84</td>
+                        <td style="background-color: #FFFF00" background-color: #00FFFF  >79</td>
+                        <td style="background-color: #FFFF00" background-color: #00FFFF  >72</td>
+                        <td style="background-color: #FFFF00" background-color: #00FFFF  >64</td>
+                        <td style="background-color: #FFFF00" background-color: #00FFFF  >61</td>
+                     </tr>
+                     <tr>
+                        <td class="label">Low &deg;F</td>
+                        <td style="background-color: #00FFFF" >43</td>
+                        <td style="background-color: #00FFFF" >45</td>
+                        <td style="background-color: #00FFFF" >48</td>
+                        <td style="background-color: #00FFFF" >52</td>
+                        <td style="background-color: #00FFFF" >55</td>
+                        <td style="background-color: #00FFFF" >63</td>
+                        <td style="background-color: #00FFFF" >66</td>
+                        <td style="background-color: #00FFFF" >66</td>
+                        <td style="background-color: #00FFFF" >63</td>
+                        <td style="background-color: #00FFFF" >57</td>
+                        <td style="background-color: #00FFFF" >50</td>
+                        <td style="background-color: #00FFFF" >46</td>
+                     </tr>
+                  </table>
+               </div>
+            </div>
+
+<!-- ------------------------- -->
+            <h2> chart 2</h2>
+<!-- ------------------------- -->
+
+            <div class="temperature-graph-container">
+               <div id="chart_precipitation" typeKey="precipitation" class="chart">
+                  <p class="loader">Loading weather data. Please wait&hellip;</p>
+               </div>
+               <div class="averages_table-wrap">
+                  <table border="0" cellspacing="0" cellpadding="0" class="averages_table">
+                     <tr>
+                        <th class="label">&nbsp;</th>
+                        <th>Jan</th>
+                        <th>Feb</th>
+                        <th>Mar</th>
+                        <th>Apr</th>
+                        <th>May</th>
+                        <th>Jun</th>
+                        <th>Jul</th>
+                        <th>Aug</th>
+                        <th>Sep</th>
+                        <th>Oct</th>
+                        <th>Nov</th>
+                        <th>Dec</th>
+                     </tr>
+                     <tr>
+                        <td class="label">mm</td>
+                        <td style="background-color: #40A8F5"  style="background-color: #2A74EC" >83 </td>
+                        <td style="background-color: #40A8F5"  style="background-color: #2A74EC" >75 </td>
+                        <td style="background-color: #40A8F5"  style="background-color: #2A74EC" >59 </td>
+                        <td style="background-color: #40A8F5"  style="background-color: #2A74EC" >40 </td>
+                        <td style="background-color: #40A8F5"  style="background-color: #2A74EC" >23 </td>
+                        <td style="background-color: #40A8F5"  style="background-color: #2A74EC" >13 </td>
+                        <td style="background-color: #40A8F5"  style="background-color: #2A74EC" >2 </td>
+                        <td style="background-color: #40A8F5"  style="background-color: #2A74EC" >5 </td>
+                        <td style="background-color: #40A8F5"  style="background-color: #2A74EC" >15 </td>
+                        <td style="background-color: #40A8F5"  style="background-color: #2A74EC" >55 </td>
+                        <td style="background-color: #40A8F5"  style="background-color: #2A74EC" >115 </td>
+                        <td style="background-color: #40A8F5"  style="background-color: #2A74EC" >98 </td>
+                     </tr>
+                     <tr>
+                        <td class="label">Days</td>
+                        <td style="background-color: #2A74EC" >5</td>
+                        <td style="background-color: #2A74EC" >5</td>
+                        <td style="background-color: #2A74EC" >7</td>
+                        <td style="background-color: #2A74EC" >4</td>
+                        <td style="background-color: #2A74EC" >3</td>
+                        <td style="background-color: #2A74EC" >2</td>
+                        <td style="background-color: #2A74EC" >0</td>
+                        <td style="background-color: #2A74EC" >0</td>
+                        <td style="background-color: #2A74EC" >3</td>
+                        <td style="background-color: #2A74EC" >4</td>
+                        <td style="background-color: #2A74EC" >7</td>
+                        <td style="background-color: #2A74EC" >5</td>
+                     </tr>
+                  </table>
+               </div>
+            </div>
+
+
+
+            <!-- ========chart 3  ======== -->
+            <div class="temperature-graph-container">
+
+               <div id="chart_daily_sun_hours" typeKey="daily_sun_hours" class="chart">
+                  <p class="loader">Loading weather data. Please wait&hellip;</p>
+               </div>
+               <div class="averages_table-wrap">
+                  <table border="0" cellspacing="0" cellpadding="0" class="averages_table">
+                     <tr>
+                        <th class="label">&nbsp;</th>
+                        <th>Jan</th>
+                        <th>Feb</th>
+                        <th>Mar</th>
+                        <th>Apr</th>
+                        <th>May</th>
+                        <th>Jun</th>
+                        <th>Jul</th>
+                        <th>Aug</th>
+                        <th>Sep</th>
+                        <th>Oct</th>
+                        <th>Nov</th>
+                        <th>Dec</th>
+                     </tr>
+                     <tr>
+                        <td class="label">Hours</td>
+                        <td style="background-color: #FFFF00" >6</td>
+                        <td style="background-color: #FFFF00" >7</td>
+                        <td style="background-color: #FFFF00" >6</td>
+                        <td style="background-color: #FFFF00" >7</td>
+                        <td style="background-color: #FFFF00" >9</td>
+                        <td style="background-color: #FFFF00" >11</td>
+                        <td style="background-color: #FFFF00" >11</td>
+                        <td style="background-color: #FFFF00" >11</td>
+                        <td style="background-color: #FFFF00" >8</td>
+                        <td style="background-color: #FFFF00" >7</td>
+                        <td style="background-color: #FFFF00" >6</td>
+                        <td style="background-color: #FFFF00" >6</td>
+                     </tr>
+                  </table>
+               </div>
+            </div>
+
+
+<!-- ========chart 4  ======== -->
+
+            <div class="temperature-graph-container">
+               <div id="chart_sea_temperature" typeKey="sea_temperature" class="chart">
+                  <p class="loader">Loading weather data. Please wait&hellip;</p>
+               </div>
+               <div class="averages_table-wrap">
+                  <table border="0" cellspacing="0" cellpadding="0" class="averages_table">
+                     <tr>
+                        <th class="label">&nbsp;</th>
+                        <th>Jan</th>
+                        <th>Feb</th>
+                        <th>Mar</th>
+                        <th>Apr</th>
+                        <th>May</th>
+                        <th>Jun</th>
+                        <th>Jul</th>
+                        <th>Aug</th>
+                        <th>Sep</th>
+                        <th>Oct</th>
+                        <th>Nov</th>
+                        <th>Dec</th>
+                     </tr>
+                     <tr>
+                        <td class="label">&deg;C</td>
+                        <td style="background-color: #FFCC00" >16</td>
+                        <td style="background-color: #FFCC00" >16</td>
+                        <td style="background-color: #FFCC00" >16</td>
+                        <td style="background-color: #FFCC00" >17</td>
+                        <td style="background-color: #FFCC00" >18</td>
+                        <td style="background-color: #FFCC00" >20</td>
+                        <td style="background-color: #FFCC00" >23</td>
+                        <td style="background-color: #FFCC00" >24</td>
+                        <td style="background-color: #FFCC00" >23</td>
+                        <td style="background-color: #FFCC00" >21</td>
+                        <td style="background-color: #FFCC00" >18</td>
+                        <td style="background-color: #FFCC00" >17</td>
+                     </tr>
+                     <tr>
+                        <td class="label">&deg;F</td>
+                        <td style="background-color: #FFFF00" > 61 </td>
+                        <td style="background-color: #FFFF00" > 61 </td>
+                        <td style="background-color: #FFFF00" > 61 </td>
+                        <td style="background-color: #FFFF00" > 63 </td>
+                        <td style="background-color: #FFFF00" > 64 </td>
+                        <td style="background-color: #FFFF00" > 68 </td>
+                        <td style="background-color: #FFFF00" > 73 </td>
+                        <td style="background-color: #FFFF00" > 75 </td>
+                        <td style="background-color: #FFFF00" > 73 </td>
+                        <td style="background-color: #FFFF00" > 70 </td>
+                        <td style="background-color: #FFFF00" > 64 </td>
+                        <td style="background-color: #FFFF00" > 63 </td>
+                     </tr>
+                  </table>
+               </div>
+            </div>
+
+
+            
+
+            <script type="text/javascript">
+               (function() {
+                  var nTimer = setInterval(function() {
+                    if (window.jQuery) {
+                      clearInterval(nTimer);
+                      $(function() {
+                        var chart_temperature_JSON = {
+                          "chart": {
+                            // "width": 554,
+                          },
+                          "title": {
+                            "text": ""
+                          },
+                          "plotOptions": {
+                            "series": {
+                              "events": {
+                                "show": "",
+                                "legendItemClick": ""
+                              }
+                            }
+                          },
+                          "credits": false,
+                          "xAxis": {
+                            "title": {
+                              "text": ""
+                            },
+                            "categories": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
+                            "lineWidth": "2",
+                            "lineColor": "#444444",
+                            "labels": {
+                              "style": {
+                                "color": "#000000",
+                                "fontSize": "10px"
+                              }
+                            }
+                          },
+                          "yAxis": [{
+                            "lineWidth": "2",
+                            "lineColor": "#444444",
+                            "labels": {
+                              "style": {
+                                "color": "#000000",
+                                "fontSize": "10px"
+                              },
+                              "format": "{value}\u00baC"
+                            },
+                            "title": {
+                              "text": ""
+                            },
+                            "allowDecimals": false
+                          }, {
+                            "labels": {
+                              "style": {
+                                "color": "#000000",
+                                "fontSize": "10px"
+                              },
+                              "format": "{value}\u00baF"
+                            },
+                            "title": {
+                              "text": ""
+                            }
+                          }],
+                          "series": [{
+                            "name": "Centigrade",
+                            "legend": "",
+                            "color": "#FFCC00",
+                            "type": "column",
+                            "pointPadding": 0,
+                            "groupPadding": 0.1,
+                            "data": [11, 12, 14, 16, 18, 22, 24, 24, 22, 18, 14, 12]
+                          }, {
+                            "name": "Fahrenheit",
+                            "legend": "",
+                            "color": "#FFFF00",
+                            "type": "column",
+                            "visible": false,
+                            "pointPadding": 0,
+                            "groupPadding": 0.1,
+                            "data": [52, 54, 57, 61, 64, 72, 75, 75, 72, 64, 57, 54]
+                          }]
+                        };
+                        var chart_highlow_temperature_JSON = {
+                          "chart": {
+                            // "width": 554,
+                          },
+                          "title": {
+                            "text": ""
+                          },
+                          "plotOptions": {
+                            "series": {
+                              "events": {
+                                "show": "",
+                                "legendItemClick": ""
+                              }
+                            }
+                          },
+                          "credits": false,
+                          "xAxis": {
+                            "title": {
+                              "text": ""
+                            },
+                            "categories": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
+                            "lineWidth": "2",
+                            "lineColor": "#444444",
+                            "labels": {
+                              "style": {
+                                "color": "#000000",
+                                "fontSize": "10px"
+                              }
+                            }
+                          },
+                          "yAxis": [{
+                            "lineWidth": "2",
+                            "lineColor": "#444444",
+                            "labels": {
+                              "style": {
+                                "color": "#000000",
+                                "fontSize": "10px"
+                              },
+                              "format": "{value}\u00baC"
+                            },
+                            "title": {
+                              "text": ""
+                            },
+                            "allowDecimals": false
+                          }, {
+                            "labels": {
+                              "style": {
+                                "color": "#000000",
+                                "fontSize": "10px"
+                              },
+                              "format": "{value}\u00baF"
+                            },
+                            "title": {
+                              "text": ""
+                            }
+                          }],
+                          "series": [{
+                            "name": "High C",
+                            "legend": "",
+                            "color": "#FFCC00",
+                            "type": "column",
+                            "pointPadding": 0,
+                            "groupPadding": 0.1,
+                            "data": [15, 16, 18, 21, 23, 27, 29, 29, 26, 22, 18, 16]
+                          }, {
+                            "name": "Low C",
+                            "legend": "",
+                            "color": "#add7a5",
+                            "type": "column",
+                            "pointPadding": 0,
+                            "groupPadding": 0.1,
+                            "data": [6, 7, 9, 11, 13, 17, 19, 19, 17, 14, 10, 8]
+                          }, {
+                            "name": "High F",
+                            "legend": "",
+                            "color": "#FFFF00",
+                            "type": "column",
+                            "visible": false,
+                            "pointPadding": 0,
+                            "groupPadding": 0.1,
+                            "data": [59, 61, 64, 70, 73, 81, 84, 84, 79, 72, 64, 61]
+                          }, {
+                            "name": "Low F",
+                            "legend": "",
+                            "color": "#00FFFF",
+                            "type": "column",
+                            "visible": false,
+                            "pointPadding": 0,
+                            "groupPadding": 0.1,
+                            "data": [43, 45, 48, 52, 55, 63, 66, 66, 63, 57, 50, 46]
+                          }]
+                        };
+                        var chart_precipitation_JSON = {
+                          "chart": {
+                            // "width": 554,
+                          },
+                          "title": {
+                            "text": ""
+                          },
+                          "plotOptions": {
+                            "series": {
+                              "events": {
+                                "show": "",
+                                "legendItemClick": ""
+                              }
+                            }
+                          },
+                          "credits": false,
+                          "xAxis": {
+                            "title": {
+                              "text": ""
+                            },
+                            "categories": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
+                            "lineWidth": "2",
+                            "lineColor": "#444444",
+                            "labels": {
+                              "style": {
+                                "color": "#000000",
+                                "fontSize": "10px"
+                              }
+                            }
+                          },
+                          "yAxis": [{
+                            "lineWidth": "2",
+                            "lineColor": "#444444",
+                            "labels": {
+                              "style": {
+                                "color": "#000000",
+                                "fontSize": "10px"
+                              },
+                              "format": "{value}mm"
+                            },
+                            "title": {
+                              "text": "Rainfall"
+                            },
+                            "allowDecimals": false,
+                            "min": 0
+                          }, {
+                            "labels": {
+                              "style": {
+                                "color": "#000000",
+                                "fontSize": "10px"
+                              },
+                              "format": "{value}d"
+                            },
+                            "title": {
+                              "text": "Rainy days"
+                            },
+                            "min": 0,
+                            "max": 30,
+                            "opposite": true,
+                            "lineWidth": "2",
+                            "lineColor": "#444444"
+                          }],
+                          "series": [{
+                            "name": "Average rainfall",
+                            "legend": "",
+                            "color": "#40A8F5",
+                            "type": "column",
+                            "pointPadding": 0,
+                            "groupPadding": 0.1,
+                            "data": [83, 75, 59, 40, 23, 13, 2, 5, 15, 55, 115, 98]
+                          }, {
+                            "name": "Average rain days",
+                            "legend": "",
+                            "color": "#2A74EC",
+                            "type": "line",
+                            "zIndex": 1,
+                            "marker": {
+                              "enabled": false
+                            },
+                            "pointPadding": 0,
+                            "groupPadding": 0.1,
+                            "data": [5, 5, 7, 4, 3, 2, 0, 0, 3, 4, 7, 5]
+                          }]
+                        };
+                        var chart_daily_sun_hours_JSON = {
+                          "chart": {
+                            // "width": 554,
+                          },
+                          "title": {
+                            "text": ""
+                          },
+                          "plotOptions": {
+                            "series": {
+                              "events": {
+                                "show": "",
+                                "legendItemClick": ""
+                              }
+                            }
+                          },
+                          "credits": false,
+                          "xAxis": {
+                            "title": {
+                              "text": ""
+                            },
+                            "categories": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
+                            "lineWidth": "2",
+                            "lineColor": "#444444",
+                            "labels": {
+                              "style": {
+                                "color": "#000000",
+                                "fontSize": "10px"
+                              }
+                            }
+                          },
+                          "yAxis": [{
+                            "lineWidth": "2",
+                            "lineColor": "#444444",
+                            "labels": {
+                              "style": {
+                                "color": "#000000",
+                                "fontSize": "10px"
+                              },
+                              "format": "{value}h"
+                            },
+                            "title": {
+                              "text": "Hours"
+                            },
+                            "allowDecimals": false,
+                            "min": 0,
+                            "max": 24,
+                            "tickInterval": 4
+                          }],
+                          "series": [{
+                            "name": "Hours",
+                            "legend": "",
+                            "color": "#FFFF00",
+                            "type": "column",
+                            "pointPadding": 0,
+                            "groupPadding": 0.1,
+                            "data": [6, 7, 6, 7, 9, 11, 11, 11, 8, 7, 6, 6]
+                          }]
+                        };
+                        var chart_sea_temperature_JSON = {
+                          "chart": {
+                            // "width": 554,
+                          },
+                          "title": {
+                            "text": ""
+                          },
+                          "plotOptions": {
+                            "series": {
+                              "events": {
+                                "show": "",
+                                "legendItemClick": ""
+                              }
+                            }
+                          },
+                          "credits": false,
+                          "xAxis": {
+                            "title": {
+                              "text": ""
+                            },
+                            "categories": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
+                            "lineWidth": "2",
+                            "lineColor": "#444444",
+                            "labels": {
+                              "style": {
+                                "color": "#000000",
+                                "fontSize": "10px"
+                              }
+                            }
+                          },
+                          "yAxis": [{
+                            "lineWidth": "2",
+                            "lineColor": "#444444",
+                            "labels": {
+                              "style": {
+                                "color": "#000000",
+                                "fontSize": "10px"
+                              },
+                              "format": "{value}\u00baC"
+                            },
+                            "title": {
+                              "text": ""
+                            },
+                            "allowDecimals": false
+                          }, {
+                            "labels": {
+                              "style": {
+                                "color": "#000000",
+                                "fontSize": "10px"
+                              },
+                              "format": "{value}\u00baF"
+                            },
+                            "title": {
+                              "text": ""
+                            }
+                          }],
+                          "series": [{
+                            "name": "Centigrade",
+                            "legend": "",
+                            "color": "#FFCC00",
+                            "type": "column",
+                            "pointPadding": 0,
+                            "groupPadding": 0.1,
+                            "data": [16, 16, 16, 17, 18, 20, 23, 24, 23, 21, 18, 17]
+                          }, {
+                            "name": "Fahrenheit",
+                            "legend": "",
+                            "color": "#FFFF00",
+                            "type": "column",
+                            "visible": false,
+                            "pointPadding": 0,
+                            "groupPadding": 0.1,
+                            "data": [61, 61, 61, 63, 64, 68, 73, 75, 73, 70, 64, 63]
+                          }]
+                        };
+                        var chartLegendItemClick = function() {
+                          var seriesIndex = this.index;
+                          var series = this.chart.series;
+                          if (!this.visible) {
+                            for (var i = 0; i < series.length; i++) {
+                              series[i].visible ? series[i].hide() : series[i].show();
+                            }
+                          }
+                          return false;
+                        };
+                        chart_temperature_JSON.plotOptions.series.events.legendItemClick = chartLegendItemClick;
+                        $('#chart_highlow_temperature').highcharts(chart_highlow_temperature_JSON);
+                        chart_precipitation_JSON.plotOptions.series.events.legendItemClick = chartLegendItemClick;
+                        $('#chart_precipitation').highcharts(chart_precipitation_JSON);
+                        chart_daily_sun_hours_JSON.plotOptions.series.events.legendItemClick = chartLegendItemClick;
+                        $('#chart_daily_sun_hours').highcharts(chart_daily_sun_hours_JSON);
+                        chart_sea_temperature_JSON.plotOptions.series.events.legendItemClick = chartLegendItemClick;
+                        $('#chart_sea_temperature').highcharts(chart_sea_temperature_JSON);
+                      });
+                    }
+                  }, 100);
+                })();
+            </script>
+         </div>
+
+
+      </div>
+      </div>
+      </div>
+
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+      <script src="https://code.highcharts.com/highcharts.js"></script>
+      
+   </body>
+</html>

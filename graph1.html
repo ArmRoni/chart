@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+   <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
+   <link rel="stylesheet" href="style.css">
+   <link rel="stylesheet" href="graph.css">
+
+   <!-- /Added by HTTrack -->
+   <head>
+   </head>
+   <body>
+        <div class="annual_averages_wrap">
+           <div class="annual_averages_panel">
+           
+              <div class="temperature-graph-container">
+                <div class="temperature-graph-container">
+                   <div id="chart_precipitation" typeKey="precipitation" class="chart">
+                      <p class="loader">Loading weather data. Please wait&hellip;</p>
+                   </div>
+                   <div class="averages_table-wrap">
+                     <div class="averages_table-wrap">
+                    <table border="0" cellspacing="0" cellpadding="0" class="averages_table">
+                       <tr>
+                          <th class="label">&nbsp;</th>
+                          <th>Jan</th>
+                          <th>Feb</th>
+                          <th>Mar</th>
+                          <th>Apr</th>
+                          <th>May</th>
+                          <th>Jun</th>
+                          <th>Jul</th>
+                          <th>Aug</th>
+                          <th>Sep</th>
+                          <th>Oct</th>
+                          <th>Nov</th>
+                          <th>Dec</th>
+                       </tr>
+                       <tr>
+                          <td class="label">mm</td>
+                          <td style="background-color: #40A8F5"  style="background-color: #2A74EC" >83 </td>
+                          <td style="background-color: #40A8F5"  style="background-color: #2A74EC" >75 </td>
+                          <td style="background-color: #40A8F5"  style="background-color: #2A74EC" >59 </td>
+                          <td style="background-color: #40A8F5"  style="background-color: #2A74EC" >40 </td>
+                          <td style="background-color: #40A8F5"  style="background-color: #2A74EC" >23 </td>
+                          <td style="background-color: #40A8F5"  style="background-color: #2A74EC" >13 </td>
+                          <td style="background-color: #40A8F5"  style="background-color: #2A74EC" >2 </td>
+                          <td style="background-color: #40A8F5"  style="background-color: #2A74EC" >5 </td>
+                          <td style="background-color: #40A8F5"  style="background-color: #2A74EC" >15 </td>
+                          <td style="background-color: #40A8F5"  style="background-color: #2A74EC" >55 </td>
+                          <td style="background-color: #40A8F5"  style="background-color: #2A74EC" >115 </td>
+                          <td style="background-color: #40A8F5"  style="background-color: #2A74EC" >98 </td>
+                       </tr>
+                       <tr>
+                          <td class="label">Days</td>
+                          <td style="background-color: #2A74EC" >5</td>
+                          <td style="background-color: #2A74EC" >5</td>
+                          <td style="background-color: #2A74EC" >7</td>
+                          <td style="background-color: #2A74EC" >4</td>
+                          <td style="background-color: #2A74EC" >3</td>
+                          <td style="background-color: #2A74EC" >2</td>
+                          <td style="background-color: #2A74EC" >0</td>
+                          <td style="background-color: #2A74EC" >0</td>
+                          <td style="background-color: #2A74EC" >3</td>
+                          <td style="background-color: #2A74EC" >4</td>
+                          <td style="background-color: #2A74EC" >7</td>
+                          <td style="background-color: #2A74EC" >5</td>
+                       </tr>
+                    </table>
+                 </div>
+                   </div>
+                </div>
+
+              <script type="text/javascript">
+                 (function() {
+                    var nTimer = setInterval(function() {
+                      if (window.jQuery) {
+                        clearInterval(nTimer);
+                        $(function() {
+                          var chart_precipitation_JSON = {
+                            "chart": {
+                              // "width": 554,
+                            
+                            },
+
+                            "title": {
+                              "text": ""
+                            },
+                            "plotOptions": {
+                              "series": {
+                                "events": {
+                                  "show": "",
+                                  "legendItemClick": ""
+                                }
+                              }
+                            },
+                            "credits": false,
+                            "xAxis": {
+                              "title": {
+                                "text": ""
+                              },
+                              "categories": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
+                              "lineWidth": "2",
+                              "lineColor": "#444444",
+                              "labels": {
+                                "style": {
+                                  "color": "#000000",
+                                  "fontSize": "10px"
+                                }
+                              }
+                            },
+                            "yAxis": [{
+                              "lineWidth": "2",
+                              "lineColor": "#444444",
+                              "labels": {
+                                "style": {
+                                  "color": "#000000",
+                                  "fontSize": "10px"
+                                },
+                                "format": "{value}mm"
+                              },
+                              "title": {
+                                "text": "Rainfall"
+                              },
+                              "allowDecimals": false,
+                              "min": 0
+                            }, {
+                              "labels": {
+                                "style": {
+                                  "color": "#000000",
+                                  "fontSize": "10px"
+                                },
+                                "format": "{value}d"
+                              },
+                              "title": {
+                                "text": "Rainy days"
+                              },
+                              "min": 0,
+                              "max": 30,
+                              "opposite": true,
+                              "lineWidth": "2",
+                              "lineColor": "#444444"
+                            }],
+                            "series": [{
+                              "name": "Average rainfall",
+                              "legend": "",
+                              "color": "#40A8F5",
+                              "type": "column",
+                              "pointPadding": 0,
+                              "groupPadding": 0.1,
+                              "data": [83, 75, 59, 40, 23, 13, 2, 5, 15, 55, 115, 98]
+                            }, {
+                              "name": "Average rain days",
+                              "legend": "",
+                              "color": "#2A74EC",
+                              "type": "line",
+                              "zIndex": 1,
+                              "marker": {
+                                "enabled": false
+                              },
+                              "pointPadding": 0,
+                              "groupPadding": 0.1,
+                              "data": [5, 5, 7, 4, 3, 2, 0, 0, 3, 4, 7, 5]
+                            }]
+                          };
+                          var chartLegendItemClick = function() {
+                            var seriesIndex = this.index;
+                            var series = this.chart.series;
+                            if (!this.visible) {
+                              for (var i = 0; i < series.length; i++) {
+                                series[i].visible ? series[i].hide() : series[i].show();
+                              }
+                            }
+                            return false;
+                          };
+                     
+                          chart_precipitation_JSON.plotOptions.series.events.legendItemClick = chartLegendItemClick;
+                          $('#chart_precipitation').highcharts(chart_precipitation_JSON);
+                
+                        });
+                      }
+                    }, 100);
+                  })();
+              </script>
+           </div>
+        </div>
+
+      </div>
+      </div>
+      </div>
+
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+      <script src="https://code.highcharts.com/highcharts.js"></script>
+      
+   </body>
+</html>

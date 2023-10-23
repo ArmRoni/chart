@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+   <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+   <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="graph.css">
+   <!-- /Added by HTTrack -->
+   <head>
+   </head>
+   <body>
+
+
+        <div class="annual_averages_panel">
+         
+            <div class="temperature-graph-container">
+               <div id="chart_sea_temperature" typeKey="sea_temperature" class="chart">
+                  <p class="loader">Loading weather data. Please wait&hellip;</p>
+               </div>
+               <div class="averages_table-wrap">
+                  <table border="0" cellspacing="0" cellpadding="0" class="averages_table">
+                     <tr>
+                        <th class="label">&nbsp;</th>
+                        <th>Jan</th>
+                        <th>Feb</th>
+                        <th>Mar</th>
+                        <th>Apr</th>
+                        <th>May</th>
+                        <th>Jun</th>
+                        <th>Jul</th>
+                        <th>Aug</th>
+                        <th>Sep</th>
+                        <th>Oct</th>
+                        <th>Nov</th>
+                        <th>Dec</th>
+                     </tr>
+                     <tr>
+                        <td class="label">&deg;C</td>
+                        <td style="background-color: #FFCC00" >16</td>
+                        <td style="background-color: #FFCC00" >16</td>
+                        <td style="background-color: #FFCC00" >16</td>
+                        <td style="background-color: #FFCC00" >17</td>
+                        <td style="background-color: #FFCC00" >18</td>
+                        <td style="background-color: #FFCC00" >20</td>
+                        <td style="background-color: #FFCC00" >23</td>
+                        <td style="background-color: #FFCC00" >24</td>
+                        <td style="background-color: #FFCC00" >23</td>
+                        <td style="background-color: #FFCC00" >21</td>
+                        <td style="background-color: #FFCC00" >18</td>
+                        <td style="background-color: #FFCC00" >17</td>
+                     </tr>
+                     <tr>
+                        <td class="label">&deg;F</td>
+                        <td style="background-color: #FFFF00" > 61 </td>
+                        <td style="background-color: #FFFF00" > 61 </td>
+                        <td style="background-color: #FFFF00" > 61 </td>
+                        <td style="background-color: #FFFF00" > 63 </td>
+                        <td style="background-color: #FFFF00" > 64 </td>
+                        <td style="background-color: #FFFF00" > 68 </td>
+                        <td style="background-color: #FFFF00" > 73 </td>
+                        <td style="background-color: #FFFF00" > 75 </td>
+                        <td style="background-color: #FFFF00" > 73 </td>
+                        <td style="background-color: #FFFF00" > 70 </td>
+                        <td style="background-color: #FFFF00" > 64 </td>
+                        <td style="background-color: #FFFF00" > 63 </td>
+                     </tr>
+                  </table>
+               </div>
+            </div>
+
+            <script type="text/javascript">
+               (function() {
+                  var nTimer = setInterval(function() {
+                    if (window.jQuery) {
+                      clearInterval(nTimer);
+                      $(function() {
+                        var chart_sea_temperature_JSON = {
+                          "chart": {
+                            "width": 554,
+                            "style": {
+                              "fontFamily": "Arial, Helvetica, sans-serif"
+                            }
+                          },
+                          "title": {
+                            "text": ""
+                          },
+                          "plotOptions": {
+                            "series": {
+                              "events": {
+                                "show": "",
+                                "legendItemClick": ""
+                              }
+                            }
+                          },
+                          "credits": false,
+                          "xAxis": {
+                            "title": {
+                              "text": ""
+                            },
+                            "categories": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
+                            "lineWidth": "2",
+                            "lineColor": "#444444",
+                            "labels": {
+                              "style": {
+                                "color": "#000000",
+                                "fontSize": "10px"
+                              }
+                            }
+                          },
+                          "yAxis": [{
+                            "lineWidth": "2",
+                            "lineColor": "#444444",
+                            "labels": {
+                              "style": {
+                                "color": "#000000",
+                                "fontSize": "10px"
+                              },
+                              "format": "{value}\u00baC"
+                            },
+                            "title": {
+                              "text": ""
+                            },
+                            "allowDecimals": false
+                          }, {
+                            "labels": {
+                              "style": {
+                                "color": "#000000",
+                                "fontSize": "10px"
+                              },
+                              "format": "{value}\u00baF"
+                            },
+                            "title": {
+                              "text": ""
+                            }
+                          }],
+                          "series": [{
+                            "name": "Centigrade",
+                            "legend": "",
+                            "color": "#FFCC00",
+                            "type": "column",
+                            "pointPadding": 0,
+                            "groupPadding": 0.1,
+                            "data": [16, 16, 16, 17, 18, 20, 23, 24, 23, 21, 18, 17]
+                          }, {
+                            "name": "Fahrenheit",
+                            "legend": "",
+                            "color": "#FFFF00",
+                            "type": "column",
+                            "visible": false,
+                            "pointPadding": 0,
+                            "groupPadding": 0.1,
+                            "data": [61, 61, 61, 63, 64, 68, 73, 75, 73, 70, 64, 63]
+                          }]
+                        };
+                        var chartLegendItemClick = function() {
+                          var seriesIndex = this.index;
+                          var series = this.chart.series;
+                          if (!this.visible) {
+                            for (var i = 0; i < series.length; i++) {
+                              series[i].visible ? series[i].hide() : series[i].show();
+                            }
+                          }
+                          return false;
+                        };
+                      
+                        chart_sea_temperature_JSON.plotOptions.series.events.legendItemClick = chartLegendItemClick;
+                        $('#chart_sea_temperature').highcharts(chart_sea_temperature_JSON);
+                      });
+                    }
+                  }, 100);
+                })();
+            </script>
+         </div>
+
+
+      </div>
+      </div>
+      </div>
+
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+      <script src="https://code.highcharts.com/highcharts.js"></script>
+      
+   </body>
+</html>
